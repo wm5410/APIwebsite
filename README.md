@@ -1,11 +1,11 @@
 # APIwebsite
 REST API for an Event Management  Application
 
-#Implementation
+# Implementation
 I use the following url to make requests
 http://localhost:3000/events
 
-#Testing
+# Testing
 Test POST body (in json)
 {
   "name": "Test Event",
