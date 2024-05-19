@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Event Management API</title>
+</head>
+
+<!-- Contains the content that is rendered on the browser -->
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Event Management API</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="api-list">
+      <h2>API Endpoints</h2>
+      <p>This API allows you to manage events with the following endpoints:</p>
+      <ul>
+        <li>
+          <strong>POST /events</strong> - Create a new event
+          <p>Description: Adds a new event to the database with provided name, date, and location.</p>
+        </li>
+        <li>
+          <strong>GET /events</strong> - Retrieve all events
+          <p>Description: Fetches a list of all events in the database.</p>
+        </li>
+        <li>
+          <strong>GET /events/:id</strong> - Retrieve event by event ID
+          <p>Description: Fetches the details of a specific event by its ID.</p>
+        </li>
+        <li>
+          <strong>GET /events/name/:name</strong> - Retrieve event by event Name
+          <p>Description: Fetches events that match a specific name.</p>
+        </li>
+        <li>
+          <strong>PUT /events/:id</strong> - Update event by event ID
+          <p>Description: Updates the details of a specific event identified by its ID.</p>
+        </li>
+        <li>
+          <strong>DELETE /events/:id</strong> - Delete event by event ID
+          <p>Description: Deletes a specific event identified by its ID.</p>
+        </li>
+        <li>
+          <strong>DELETE /events</strong> - Delete all events
+          <p>Description: Deletes all events from the database.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="postman-test">
+      <h2>Postman Test Example</h2>
+      <p>To test the "Create a new event" function, send a POST request to <code>http://localhost:3000/events</code> with the following JSON body:</p>
+      <pre>
+        {
+          "name": "Test Event",
+          "description": "Description of Event",
+          "startdate": "2024-05-20 08:00",
+          "enddate": "2024-05-20 17:00"
+        }
+      </pre>
+      <p>The response should include a 201 status code and the details of the created event.</p>
+    </div>
+  </section>
+</body>
+
+</html>
