@@ -13,3 +13,6 @@ Test POST body (in json)
   "startdate": "2024-05-20 08:00",
   "enddate": "2024-05-20 17:00"
 }
+
+# Note
+You need Node.js by running npm init -y
