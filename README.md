@@ -1,11 +1,22 @@
-# APIwebsite
-REST API for an Event Management  Application
+# Description
+REST API for an Event Management Application
 
-# Implementation
-I use the following url to make requests
-http://localhost:3000/events
+# Setup
+1. Download as a Zip
+2. Unzip and open in VSC
+3.  Download Node.js either from
+    - https://nodejs.org/en/download/
+    - or install manually
+      - _winget install Schniz.fnm_
+      - _fnm install 22_
+      - _node -v_ (Should print "v22.15.1".)
+      - _npm -v_ (Should print "10.9.2".)
+4. Run _npm install_
+5. Run_ node app.js_ to run server
+6. Go to http://localhost:3000/events to verify the server is running
 
 # Testing
+
 Test POST body (in json) <br>
 { <br>
   "name": "Test Event", <br>
@@ -14,16 +25,6 @@ Test POST body (in json) <br>
   "enddate": "2024-05-20 17:00" <br> 
 }
 
-# Setup
-1. Download as a Zip
-2. Unzip and open in VSC
-3.  Download Node.js either from
-    - https://nodejs.org/en/download/
-    - or install manually
-      - winget install Schniz.fnm
-      - fnm install 22
-      - node -v (Should print "v22.15.1".)
-      - npm -v (Should print "10.9.2".)
-4. 
 
-You need Node.js by running npm init -y
+# Images
+![GET example](/Screenshots/Get.png?raw=true "GET example")
