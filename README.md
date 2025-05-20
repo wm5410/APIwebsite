@@ -13,7 +13,7 @@ REST API for an Event Management Application
       - _npm -v_ (Should print "10.9.2".)
 4. Run _npm install_
 5. Run_ node app.js_ to run server
-6. Go to http://localhost:3000/events to verify the server is running
+6. Go to http://localhost:3001/events to verify the server is running
 
 # Testing
 To test if API works, use Postman API platform and send a GET request using http://localhost:3001/events as the URL.
