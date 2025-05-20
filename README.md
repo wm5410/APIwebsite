@@ -27,5 +27,5 @@ Test POST body (in json) <br>
 
 
 # Images
-![GET example](/screenshots\Get.png?raw=true "GET example")
-![GET example](/screenshots\Post.png?raw=true "GET example")
+![GET example](/screenshots/Get.png?raw=true "GET example")
+![GET example](/screenshots/Post.png?raw=true "GET example")
