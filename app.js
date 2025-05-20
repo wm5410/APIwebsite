@@ -2,7 +2,7 @@
 const express = require('express'); // Express.js for building the server
 const cors = require('cors'); // CORS for handling cross-origin requests
 const path = require('path'); // Path for handling file and directory paths
-const events = require('./resources/events'); // Custom module for handling events (events.js file)
+const events = require('./events'); // Custom module for handling events (events.js file)
 
 // Creating an Express application
 const app = express();
@@ -22,7 +22,7 @@ app.delete('/events/:id', events.deleteEventById); // Route for deleting an even
 app.delete('/events', events.deleteAllEvents); // Route for deleting all events
 
 // Server setup
-const PORT = process.env.PORT || 3000; // Set the port to use
+const PORT = process.env.PORT || 3001; // Set the port to use
 app.listen(PORT, () => { // Start the server
   console.log(`Server is running on port ${PORT}`); // Log a message when the server starts successfully
 });
