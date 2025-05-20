@@ -1,5 +1,5 @@
 // Establishes the database connection
-const db = require('../db');
+const db = require('./db');
 
 // Create a New Event and Save it to the Database -POST- (Crud)
 // Steps:
